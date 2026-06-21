@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+
+  /* Grand Cru Travelers Brand Guidelines Palette */
+  --color-brand-primary: #5A0E14;        /* Primary Burgundy */
+  --color-brand-primary-dark: #370C08;   /* Primary Dark Burgundy */
+  --color-brand-primary-surf: #A37863;   /* Primary Warm Surface Tan */
+
+  --color-brand-secondary: #D1A672;      /* Secondary Gold/Sand */
+  --color-brand-secondary-light: #E7D2BC;/* Secondary Light Cream */
+  --color-brand-secondary-dark: #8E542B; /* Secondary Dark Copper */
+
+  --color-accent-gold: #D1A672;
+  --color-accent-copper: #8E542B;
+  --color-accent-clay: #5F311C;
+
+  --color-neutral-bg: #F5EFE8;           /* Cream background */
+  --color-neutral-surface: #E7D2BC;      /* Warm beige surface */
+  --color-neutral-border: #D8C7B6;       /* Neutral border */
+  --color-neutral-text-sec: #6D5B52;     /* Muted secondary text */
+  --color-neutral-text-prim: #2B1A16;    /* Dark charcoal primary text */
+
+  --color-status-success: #4E7A56;
+  --color-status-warning: #C28A3D;
+  --color-status-error: #B44B4B;
+}
+
+/* Custom Base Overrides - Dark Theme by Default */
+@layer base {
+  body {
+    background-color: var(--color-brand-primary-dark);
+    color: var(--color-neutral-bg);
+    font-family: var(--font-sans);
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    color: var(--color-neutral-bg);
+  }
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-brand-primary-dark);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-primary-surf);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-secondary);
+}
