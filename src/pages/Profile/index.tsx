@@ -109,16 +109,6 @@ export default function ProfilePage() {
               </div>
               <span className="text-brand-secondary/60">→</span>
             </div>
-
-            <div className="p-3.5 flex items-center justify-between text-xs cursor-pointer hover:bg-white/5 transition-colors" onClick={() => navigate('/guide')}>
-              <div className="flex items-center gap-3">
-                <svg className="h-4.5 w-4.5 text-brand-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                </svg>
-                <span className="text-neutral-surface/90">Design Guidelines Dashboard</span>
-              </div>
-              <span className="text-brand-secondary/60">→</span>
-            </div>
           </div>
         </div>
 
